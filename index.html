@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>valencia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static/css/index.css" />
+  </head>
+  <body>
+    <!-- nav bar large screens -->
+    <div class="navBar">
+      <div class="navLogo">
+        <img
+          src="static/images/navBar/logo.png"
+          alt="logo"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+        />
+      </div>
+      <div class="navLinksAndBtnContainer">
+        <div class="navLinkscontainer">
+          <a href="#section1" class="navLinks">About</a>
+          <a href="#section2" class="navLinks">Pricing</a>
+          <a href="#section3" class="navLinks">Gallery</a>
+          <a href="#section4" class="navLinks">Benefits</a>
+          <a href="#section5" class="navLinks">Location</a>
+          <a href="#section6" class="navLinks">Floor Plans</a>
+          <a href="#section7" class="navLinks">FAQ</a>
+        </div>
+        <button class="navBtn">Contact</button>
+      </div>
+    </div>
+
+    <!-- nav bar small screens -->
+    <div class="pos-f-t navBarMobile">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="logo">
+            <img
+              src="./static/images/navbar/logo.png"
+              alt="logo"
+              onclick="location.href='index.html'"
+              id="logo"
+              style="width: 160px; height: 64px"
+            />
+          </div>
+          <button
+            class="navBtn hamburger"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="./static/images/navbar/hamburger.svg"
+              alt="hamburger"
+              style="width: 40px; height: 40px"
+            />
+          </button>
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4">
+          <div class="navigationMobile">
+            <a href="#section1" class="navLinks">About</a>
+            <a href="#section2" class="navLinks">Pricing</a>
+            <a href="#section3" class="navLinks">Gallery</a>
+            <a href="#section4" class="navLinks">Benefits</a>
+            <a href="#section5" class="navLinks">Location</a>
+            <a href="#section6" class="navLinks">Floor Plans</a>
+            <a href="#section7" class="navLinks">FAQ</a>
+            <button class="navBtn">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- top section -->
+    <div id="topSection"></div>
+
+    <!-- about -->
+    <section id="section1">
+      <h2>About</h2>
+      <p>This is About.</p>
+    </section>
+
+    <!-- pricing -->
+    <section id="section2">
+      <h2>Pricing</h2>
+      <p>This is Pricing.</p>
+    </section>
+
+    <!-- gallery -->
+    <section id="section3">
+      <h2>Gallery</h2>
+      <p>This is Gallery.</p>
+    </section>
+
+    <!-- benefits -->
+    <section id="section4">
+      <h2>Benefits</h2>
+      <p>This is Benefits.</p>
+    </section>
+
+    <!-- location -->
+    <section id="section5">
+      <h2>Location</h2>
+      <p>This is Location.</p>
+    </section>
+
+    <!-- floor plans -->
+    <section id="section6">
+      <h2>Floor Plans</h2>
+      <p>This is Floor Plans.</p>
+    </section>
+
+    <!-- faq -->
+    <section id="section7">
+      <h2>FAQ</h2>
+      <p>This is FAQ.</p>
+    </section>
+  </body>
+</html>
+<script src="static/js/navBar.js"></script>
