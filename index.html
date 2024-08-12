@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>valencia</title>
     <link
+      rel="stylesheet"
+      href="https://cdn.example.com/satoshi-font/css/satoshi.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -22,7 +30,7 @@
     <div class="navBar">
       <div class="navLogo">
         <img
-          src="static/images/navBar/logo.png"
+          src="static/images/navBar/logo.webp"
           alt="logo"
           onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
         />
@@ -47,9 +55,9 @@
         <div class="container-fluid">
           <div class="logo">
             <img
-              src="./static/images/navbar/logo.png"
+              src="./static/images/navbar/logo.webp"
               alt="logo"
-              onclick="location.href='index.html'"
+              onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
               id="logo"
               style="width: 160px; height: 64px"
             />
@@ -88,12 +96,106 @@
     </div>
 
     <!-- top section -->
-    <div id="topSection"></div>
+    <div id="topSection">
+      <div class="tsFormContainer">
+        <form action="">
+          <div class="tsForm">
+            <h2>Get in Touch!</h2>
+            <input type="text" placeholder="Name*" required />
+            <input type="email" placeholder="Email Id*" required />
+            <input type="tel" placeholder="Contact No*" required />
+            <button class="navBtn">Submit</button>
+          </div>
+        </form>
+        <div class="tsbtnContainer">
+          <button>Book a visit</button>
+          <button>Get cost sheet</button>
+          <button>Get floor plans</button>
+        </div>
+      </div>
+    </div>
 
     <!-- about -->
     <section id="section1">
-      <h2>About</h2>
-      <p>This is About.</p>
+      <div class="aboutImgContainer">
+        <img
+          src="static/images/aboutSection/aboutImg1.webp"
+          alt="aboutImg1"
+          class="aboutImg1"
+        />
+        <img
+          src="static/images/aboutSection/aboutImg2.webp"
+          alt="aboutImg2"
+          class="aboutImg2"
+        />
+      </div>
+      <div class="abouTextContainer">
+        <div class="oboutTextconent">
+          <h1>About Us</h1>
+          <h2>When we say Prime City Living, Is it Comfort?</h2>
+          <p>
+            Legend Valencia, located in Singasanda, offers ultra spacious 2&3
+            BHK homes, G+2 no traffic Club House, all while being in close
+            proximity to bustling hubs such as Koramangla, Sarjapur Road,
+            Electronic City.
+          </p>
+        </div>
+        <div class="aboutCardContainer">
+          <div class="aboutCards">
+            <!-- card 1 -->
+            <div class="aboutCard">
+              <img
+                src="static/images/aboutSection/configuration.svg"
+                alt="configuration"
+              />
+              <h3>Configuration</h3>
+              <p>2&3 BHK Homes</p>
+            </div>
+
+            <!-- card 2 -->
+            <div class="aboutCard">
+              <img
+                src="static/images/aboutSection/possessionDate.svg"
+                alt="possessionDate"
+              />
+              <h3>Possession Date</h3>
+              <p>December 2025</p>
+            </div>
+
+            <!-- card 3 -->
+            <div class="aboutCard">
+              <img src="static/images/aboutSection/vastu.svg" alt="vastu" />
+              <h3>100%</h3>
+              <p>Vastu-fit Corner Units</p>
+            </div>
+
+            <!-- card 4 -->
+            <div class="aboutCard">
+              <img src="static/images/aboutSection/units.svg" alt="units" />
+              <h3>Units</h3>
+              <p>174 Properties</p>
+            </div>
+
+            <!-- card 5 -->
+            <div class="aboutCard">
+              <img
+                src="static/images/aboutSection/location.svg"
+                alt="location"
+              />
+              <h3>Location</h3>
+              <p>Singasandra, Near E-City</p>
+            </div>
+
+            <!-- card 6 -->
+            <div class="aboutCard">
+              <img src="static/images/aboutSection/area.svg" alt="area" />
+              <h3>Area</h3>
+              <p>2.5 Acre | 6600 sq ft</p>
+            </div>
+          </div>
+          <button class="navBtn">Know More</button>
+        </div>
+      </div>
     </section>
 
     <!-- pricing -->
