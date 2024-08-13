@@ -36,8 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
+        const offset = window.innerWidth > 1024 ? 10 : 180;
         window.scrollTo({
-          top: targetElement.offsetTop - 90,
+          top: targetElement.offsetTop - offset,
           behavior: "smooth",
         });
       }
