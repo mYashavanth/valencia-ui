@@ -23,6 +23,19 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="static/css/index.css" />
   </head>
   <body>
@@ -307,8 +320,30 @@
 
     <!-- gallery -->
     <section id="section3">
-      <h2>Gallery</h2>
-      <p>This is Gallery.</p>
+      <div class="galleryTextContent">
+        <h1>Gallery</h1>
+        <h2>Take a glimpse into the community of Valencia</h2>
+      </div>
+      <div class="owl-carousel owl-theme owl-one">
+        <div class="item">
+          <img src="./static/images/gallery/img1.webp" alt="img1" />
+        </div>
+        <div class="item">
+          <img src="./static/images/gallery/img1.webp" alt="img1" />
+        </div>
+        <div class="item">
+          <img src="./static/images/gallery/img1.webp" alt="img1" />
+        </div>
+        <div class="item">
+          <img src="./static/images/gallery/img1.webp" alt="img1" />
+        </div>
+        <div class="item">
+          <img src="./static/images/gallery/img1.webp" alt="img1" />
+        </div>
+        <div class="item">
+          <img src="./static/images/gallery/img1.webp" alt="img1" />
+        </div>
+      </div>
     </section>
 
     <!-- benefits -->
@@ -337,33 +372,16 @@
   </body>
 </html>
 <script src="static/js/navBar.js"></script>
+<script src="static/js/topSection.js"></script>
 <script>
-  getinTouch = document.getElementById("tsGetinTouchToggleClassBtn");
-  FormDataContiner = document.querySelector(".tsFormContainer");
-
-  function checkScreenWidth() {
-    if (window.innerWidth > 1024) {
-      FormDataContiner.classList.add("active");
-      getinTouch.classList.add("active");
-      getinTouch.innerHTML = "Close";
-    } else {
-      FormDataContiner.classList.remove("active");
-      getinTouch.classList.remove("active");
-      getinTouch.innerHTML = "Get in Touch";
-    }
-  }
-
-  checkScreenWidth();
-
-  window.addEventListener("resize", checkScreenWidth);
-
-  getinTouch.addEventListener("click", () => {
-    FormDataContiner.classList.toggle("active");
-    getinTouch.classList.toggle("active");
-    if (FormDataContiner.classList.contains("active")) {
-      getinTouch.innerHTML = "Close";
-    } else {
-      getinTouch.innerHTML = "Get in Touch";
-    }
+  $(document).ready(function () {
+    $(".owl-one").owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["&#129128", "<span>&#129130;</span>"],
+    });
   });
 </script>

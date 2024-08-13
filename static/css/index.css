@@ -422,6 +422,85 @@ h2 {
   transition: all 0.3s ease;
 }
 /* pricing end */
+/* gallery start */
+#section3 {
+  background-image: url("/static/images/gallery/galleryBackgroundImg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 130px 140px;
+  height: 100% !important;
+  position: relative;
+}
+.galleryTextContent{
+  margin-bottom: -300px;
+}
+.galleryTextContent h1{
+  color: white;
+} 
+.galleryTextContent h2 {
+  color: white;
+  width: 50%;
+}
+.owl-carousel {
+  padding: 8px;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 360px;
+}
+.owl-carousel .item {
+  border: 20px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+.owl-carousel .item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.owl-one {
+  position: relative;
+}
+.owl-nav button {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.owl-nav button.owl-prev {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+.owl-nav button.owl-prev:hover,.owl-nav button.owl-next:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.owl-nav button.owl-next {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+.owl-one .owl-nav button.owl-prev {
+  top: -140px !important;
+  right: 100px !important;
+}
+.owl-one .owl-nav button.owl-next {
+  top: -140px !important;
+  right: 10px !important;
+}
+/* gallery end */
 section {
   /* border: 1px solid green; */
   width: 100%;
@@ -473,6 +552,15 @@ section {
     width: 45%;
   }
   /* pricing end */
+  /* gallery start */
+  #section3 {
+    padding: 130px 140px;
+  }
+  .galleryTextContent h2 {
+  color: white;
+  width: 60%;
+}
+  /* gallery end */
 }
 /* Desktops ---------------------------------------------------------------------------------------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
