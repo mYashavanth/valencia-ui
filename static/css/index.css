@@ -282,6 +282,7 @@ h2 {
   margin-bottom: 16px;
 }
 .aboutCard h3 {
+  font-family: "Satoshi", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -356,6 +357,71 @@ h2 {
   height: 100%;
 }
 /* special end */
+/* pricing start */
+#section2 {
+  padding: 130px 140px;
+  text-align: center;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.pricingCardContainer {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+.pricingCard {
+  /* border: 1px solid black; */
+  width: 30%;
+  padding: 48px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.pricingCard h4 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Satoshi", sans-serif;
+}
+.pricingCard h4 span {
+  font-size: 42px;
+  font-weight: 900;
+  font-family: "Satoshi", sans-serif;
+}
+.pricingCardTop {
+  /* border: 1px solid black; */
+  padding: 16px 28px;
+  background-color: #f1eadf;
+  border-radius: 10px;
+}
+.pricingCardTop h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+.pricingCardBottomStyle {
+  background-color: var(--primary-color);
+  height: 10px;
+  width: 180%;
+  position: absolute;
+  bottom: -10px;
+  transition: all 0.3s ease;
+}
+.pricingCard:hover .pricingCardBottomStyle {
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+/* pricing end */
 section {
   /* border: 1px solid green; */
   width: 100%;
@@ -398,10 +464,15 @@ section {
   .specialTextContainer {
     padding: 0 0 0 80px;
   }
-  .specialTextContainer p{
+  .specialTextContainer p {
     width: 90%;
   }
   /* special end */
+  /* pricing start */
+  .pricingCard {
+    width: 45%;
+  }
+  /* pricing end */
 }
 /* Desktops ---------------------------------------------------------------------------------------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
@@ -463,6 +534,14 @@ section {
     display: none;
   }
   /* special end */
+  /* pricing start */
+  #section2 {
+    padding: 100px 40px;
+  }
+  .pricingCard {
+    width: 45%;
+  }
+  /* pricing end */
 }
 
 /* Tablets ---------------------------------------------------------------------------------------------- */
@@ -517,9 +596,17 @@ section {
     display: none;
   }
   /* special end */
+  /* pricing start */
+  #section2 {
+    padding: 80px 40px;
+  }
+  .pricingCard {
+    width: 75%;
+  }
+  /* pricing end */
 }
 
-/* Mobile devices */
+/* Mobile devices ------------------------------------------------------------------------------------------ */
 @media all and (max-width: 480px) {
   h2 {
     font-size: 36px;
@@ -553,7 +640,7 @@ section {
   .aboutImgContainer {
     display: none;
   }
-  .abouTextContainer button{
+  .abouTextContainer button {
     margin: auto;
   }
   .abouTextContainer h2 {
@@ -576,7 +663,7 @@ section {
   .specialTextContainer {
     padding: 40px 20px;
   }
-  .specialTextContainer button{
+  .specialTextContainer button {
     margin: auto;
   }
   .specialTextContainer h2 {
@@ -595,4 +682,14 @@ section {
     width: 95%;
   }
   /* special end */
+  /* pricing start */
+  #section2 {
+    padding: 80px 20px;
+    gap: 40px;
+  }
+  .pricingCard {
+    width: 95%;
+    padding: 20px;
+  }
+  /* pricing end */
 }
