@@ -272,6 +272,11 @@ h2 {
   gap: 4px;
   background-color: #f1eadf;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.aboutCard:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 .aboutCard img {
   margin-bottom: 16px;
