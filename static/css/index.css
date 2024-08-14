@@ -432,12 +432,12 @@ h2 {
   height: 100% !important;
   position: relative;
 }
-.galleryTextContent{
+.galleryTextContent {
   margin-bottom: -300px;
 }
-.galleryTextContent h1{
+.galleryTextContent h1 {
   color: white;
-} 
+}
 .galleryTextContent h2 {
   color: white;
   width: 50%;
@@ -447,9 +447,11 @@ h2 {
   /* border: 1px solid black; */
   position: relative;
   top: 360px;
+  border-radius: 10px;
+  background-color: white;
 }
 .owl-carousel .item {
-  border: 20px solid white;
+  border: 10px solid white;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
@@ -478,7 +480,8 @@ h2 {
   background: var(--primary-color) !important;
   color: var(--secondary-color) !important;
 }
-.owl-nav button.owl-prev:hover,.owl-nav button.owl-next:hover {
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
   background-color: var(--secondary-color) !important;
   color: var(--primary-color) !important;
 }
@@ -554,12 +557,18 @@ section {
   /* pricing end */
   /* gallery start */
   #section3 {
-    padding: 130px 140px;
+    padding: 130px 100px;
   }
   .galleryTextContent h2 {
-  color: white;
-  width: 60%;
-}
+    color: white;
+    width: 60%;
+  }
+  .galleryTextContent {
+    margin-bottom: -240px;
+  }
+  .owl-carousel {
+    top: 300px;
+  }
   /* gallery end */
 }
 /* Desktops ---------------------------------------------------------------------------------------------- */
@@ -630,6 +639,21 @@ section {
     width: 45%;
   }
   /* pricing end */
+  /* gallery start */
+  #section3 {
+    padding: 100px 40px;
+  }
+  .galleryTextContent h2 {
+    color: white;
+    width: 70%;
+  }
+  .galleryTextContent {
+    margin-bottom: -180px;
+  }
+  .owl-carousel {
+    top: 240px;
+  }
+  /* gallery end */
 }
 
 /* Tablets ---------------------------------------------------------------------------------------------- */
@@ -692,6 +716,38 @@ section {
     width: 75%;
   }
   /* pricing end */
+  /* gallery start */
+  #section3 {
+    padding: 80px 40px;
+  }
+  .galleryTextContent h2 {
+    color: white;
+    width: 100%;
+  }
+  .galleryTextContent {
+    margin-bottom: -120px;
+  }
+  .owl-carousel {
+    top: 180px;
+  }
+  .owl-carousel .item {
+    border: 5px solid white;
+  }
+  .owl-nav button.owl-next,
+  .owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+  }
+  .owl-one .owl-nav button.owl-prev {
+    top: -60px !important;
+    right: 80px !important;
+  }
+  .owl-one .owl-nav button.owl-next {
+    top: -60px !important;
+    right: 10px !important;
+  }
+  /* gallery end */
 }
 
 /* Mobile devices ------------------------------------------------------------------------------------------ */
@@ -780,4 +836,37 @@ section {
     padding: 20px;
   }
   /* pricing end */
+  /* gallery start */
+  #section3 {
+    padding: 80px 20px;
+  }
+  .galleryTextContent h2 {
+    color: white;
+    width: 100%;
+  }
+  .galleryTextContent {
+    margin-bottom: -80px;
+  }
+  .owl-carousel .item {
+    border: 0px solid white;
+  }
+  .owl-carousel {
+    top: 140px;
+  }
+
+  .owl-nav button.owl-next,
+  .owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+  }
+  .owl-one .owl-nav button.owl-prev {
+    top: -60px !important;
+    right: 80px !important;
+  }
+  .owl-one .owl-nav button.owl-next {
+    top: -60px !important;
+    right: 10px !important;
+  }
+  /* gallery end */
 }
