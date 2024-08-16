@@ -702,7 +702,7 @@ h2 {
 /* location end */
 /* floor plans start */
 #section6 {
-  padding: 130px 140px;
+  padding: 130px 140px 0;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -801,6 +801,41 @@ h2 {
   right: 10px !important;
 }
 /* floor plans end */
+/* FAQ start */
+#section7 {
+  padding: 130px 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 100% !important;
+  background-color: #fbf8f5;
+}
+.faq-item {
+  margin: 10px 0;
+  border-bottom: 2px solid #F1E9DF;
+}
+.faq-question {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.faq-question h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+.faq-answer {
+  display: none;
+  padding: 10px;
+}
+.toggle-icon {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* FAQ end */
 section {
   /* border: 1px solid green; */
   width: 100%;
@@ -897,7 +932,7 @@ section {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 130px 140px;
+    padding: 130px 140px 0;
   }
   #section6 h2 {
     width: 55%;
@@ -1022,12 +1057,17 @@ section {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 100px 40px;
+    padding: 100px 40px 0;
   }
   #section6 h2 {
     width: 70%;
   }
   /* floor plans end */
+  /* FAQ start */
+  #section7 {
+    padding: 100px 40px;
+  }
+  /* FAQ end */
 }
 
 /* Tablets ---------------------------------------------------------------------------------------------- */
@@ -1167,7 +1207,7 @@ section {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 80px 40px;
+    padding: 80px 40px 0;
   }
   #section6 h2 {
     width: 100%;
@@ -1187,6 +1227,11 @@ section {
     right: 10px !important;
   }
   /* floor plans end */
+  /* FAQ start */
+  #section7 {
+    padding: 80px 40px;
+  }
+  /* FAQ end */
 }
 
 /* Mobile devices ------------------------------------------------------------------------------------------ */
@@ -1375,4 +1420,9 @@ section {
     right: 10px !important;
   }
   /* floor plans end */
+  /* FAQ start */
+  #section7 {
+    padding: 80px 20px;
+  }
+  /* FAQ end */
 }
