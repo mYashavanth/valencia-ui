@@ -448,7 +448,7 @@ h2 {
   color: white;
   width: 50%;
 }
-.owl-carousel {
+.owl-one.owl-carousel {
   padding: 8px;
   /* border: 1px solid black; */
   position: relative;
@@ -456,13 +456,13 @@ h2 {
   border-radius: 10px;
   background-color: white;
 }
-.owl-carousel .item {
+.owl-one.owl-carousel .item {
   border: 10px solid white;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
 }
-.owl-carousel .item img {
+.owl-one.owl-carousel .item img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -470,14 +470,14 @@ h2 {
 .owl-one {
   position: relative;
 }
-.owl-nav button {
+.owl-one .owl-nav button {
   background-color: black;
   border: none;
   padding: 10px;
   cursor: pointer;
 }
 
-.owl-nav button.owl-prev {
+.owl-one .owl-nav button.owl-prev {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -486,13 +486,13 @@ h2 {
   background: var(--primary-color) !important;
   color: var(--secondary-color) !important;
 }
-.owl-nav button.owl-prev:hover,
-.owl-nav button.owl-next:hover {
+.owl-one .owl-nav button.owl-prev:hover,
+.owl-one .owl-nav button.owl-next:hover {
   background-color: var(--secondary-color) !important;
   color: var(--primary-color) !important;
 }
 
-.owl-nav button.owl-next {
+.owl-one .owl-nav button.owl-next {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -700,6 +700,107 @@ h2 {
   background-color: white;
 }
 /* location end */
+/* floor plans start */
+#section6 {
+  padding: 130px 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 100% !important;
+}
+#section6 h2 {
+  width: 40%;
+}
+.owl-two.owl-carousel {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+.owl-two.owl-carousel .item {
+  width: 90%;
+  margin: 25px auto;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.owl-two.owl-carousel .item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s ease;
+}
+.owl-two.owl-carousel .item h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+.floorImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: blur(6px);
+}
+.floorImg.active {
+  filter: blur(0px);
+}
+.unlockBtn {
+  width: fit-content;
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  transform: translate(50%, -50%);
+  padding: 10px 20px;
+}
+.owl-two {
+  position: relative;
+}
+.owl-two .owl-nav button {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.owl-two .owl-nav button.owl-prev {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+.owl-two .owl-nav button.owl-prev:hover,
+.owl-two .owl-nav button.owl-next:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.owl-two .owl-nav button.owl-next {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+.owl-two .owl-nav button.owl-prev {
+  top: -140px !important;
+  right: 100px !important;
+}
+.owl-two .owl-nav button.owl-next {
+  top: -140px !important;
+  right: 10px !important;
+}
+/* floor plans end */
 section {
   /* border: 1px solid green; */
   width: 100%;
@@ -763,7 +864,7 @@ section {
   .galleryTextContent {
     margin-bottom: -240px;
   }
-  .owl-carousel {
+  .owl-one .owl-carousel {
     top: 300px;
   }
   /* gallery end */
@@ -794,6 +895,14 @@ section {
     width: 90%;
   }
   /* location end */
+  /* floor plans start */
+  #section6 {
+    padding: 130px 140px;
+  }
+  #section6 h2 {
+    width: 55%;
+  }
+  /* floor plans end */
 }
 /* Desktops ---------------------------------------------------------------------------------------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
@@ -875,7 +984,7 @@ section {
   .galleryTextContent {
     margin-bottom: -180px;
   }
-  .owl-carousel {
+  .owl-one .owl-carousel {
     top: 240px;
   }
   /* gallery end */
@@ -911,6 +1020,14 @@ section {
     width: 90%;
   }
   /* location end */
+  /* floor plans start */
+  #section6 {
+    padding: 100px 40px;
+  }
+  #section6 h2 {
+    width: 70%;
+  }
+  /* floor plans end */
 }
 
 /* Tablets ---------------------------------------------------------------------------------------------- */
@@ -985,14 +1102,14 @@ section {
   .galleryTextContent {
     margin-bottom: -120px;
   }
-  .owl-carousel {
+  .owl-one .owl-carousel {
     top: 180px;
   }
-  .owl-carousel .item {
+  .owl-one .owl-carousel .item {
     border: 5px solid white;
   }
-  .owl-nav button.owl-next,
-  .owl-nav button.owl-prev {
+  .owl-one .owl-nav button.owl-next,
+  .owl-one .owl-nav button.owl-prev {
     width: 40px;
     height: 40px;
     font-size: 20px !important;
@@ -1048,6 +1165,28 @@ section {
     width: 90%;
   }
   /* location end */
+  /* floor plans start */
+  #section6 {
+    padding: 80px 40px;
+  }
+  #section6 h2 {
+    width: 100%;
+  }
+  .owl-two .owl-nav button.owl-next,
+  .owl-two .owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+  }
+  .owl-two .owl-nav button.owl-prev {
+    top: -60px !important;
+    right: 80px !important;
+  }
+  .owl-two .owl-nav button.owl-next {
+    top: -60px !important;
+    right: 10px !important;
+  }
+  /* floor plans end */
 }
 
 /* Mobile devices ------------------------------------------------------------------------------------------ */
@@ -1148,15 +1287,15 @@ section {
   .galleryTextContent {
     margin-bottom: -80px;
   }
-  .owl-carousel .item {
+  .owl-one .owl-carousel .item {
     border: 0px solid white;
   }
-  .owl-carousel {
+  .owl-one .owl-carousel {
     top: 140px;
   }
 
-  .owl-nav button.owl-next,
-  .owl-nav button.owl-prev {
+  .owl-one .owl-nav button.owl-next,
+  .owl-one .owl-nav button.owl-prev {
     width: 40px;
     height: 40px;
     font-size: 20px !important;
@@ -1214,4 +1353,26 @@ section {
     width: 100%;
   }
   /* location end */
+  /* floor plans start */
+  #section6 {
+    padding: 80px 20px;
+  }
+  #section6 h2 {
+    width: 100%;
+  }
+  .owl-two .owl-nav button.owl-next,
+  .owl-two .owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+  }
+  .owl-two .owl-nav button.owl-prev {
+    top: -60px !important;
+    right: 80px !important;
+  }
+  .owl-two .owl-nav button.owl-next {
+    top: -60px !important;
+    right: 10px !important;
+  }
+  /* floor plans end */
 }

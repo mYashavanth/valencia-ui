@@ -602,8 +602,65 @@
 
     <!-- floor plans -->
     <section id="section6">
-      <h2>Floor Plans</h2>
-      <p>This is Floor Plans.</p>
+      <div class="floorplansTextContent">
+        <h1>Floor Plans</h1>
+        <h2>Find Your Dream House By Size and Vastu</h2>
+      </div>
+      <div class="owl-carousel owl-theme owl-two">
+        <div class="item">
+          <img
+            class="floorImg active"
+            src="./static/images/floorPlans/floorPlan.webp"
+            alt="floor1"
+          />
+          <h3>Floor Plan 1</h3>
+        </div>
+        <div class="item">
+          <img
+            class="floorImg"
+            src="./static/images/floorPlans/floorPlan.webp"
+            alt="floor2"
+          />
+          <h3>Floor Plan 2</h3>
+          <button class="unlockBtn navBtn">Unlock</button>
+        </div>
+        <div class="item">
+          <img
+            class="floorImg"
+            src="./static/images/floorPlans/floorPlan.webp"
+            alt="floor3"
+          />
+          <h3>Floor Plan 3</h3>
+          <button class="unlockBtn navBtn">Unlock</button>
+        </div>
+        <div class="item">
+          <img
+            class="floorImg"
+            src="./static/images/floorPlans/floorPlan.webp"
+            alt="floor4"
+          />
+          <h3>Floor Plan 4</h3>
+          <button class="unlockBtn navBtn">Unlock</button>
+        </div>
+        <div class="item">
+          <img
+            class="floorImg"
+            src="./static/images/floorPlans/floorPlan.webp"
+            alt="floor5"
+          />
+          <h3>Floor Plan 5</h3>
+          <button class="unlockBtn navBtn">Unlock</button>
+        </div>
+        <div class="item">
+          <img
+            class="floorImg"
+            src="./static/images/floorPlans/floorPlan.webp"
+            alt="floor6"
+          />
+          <h3>Floor Plan 6</h3>
+          <button class="unlockBtn navBtn">Unlock</button>
+        </div>
+      </div>
     </section>
 
     <!-- faq -->
@@ -625,6 +682,27 @@
       nav: true,
       dots: false,
       navText: ["&#129128;", "&#129130;"],
+    });
+  });
+  $(document).ready(function () {
+    $(".owl-two").owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["&#129128;", "&#129130;"],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        769: {
+          items: 2,
+        },
+        1400: {
+          items: 3,
+        },
+      },
     });
   });
 </script>
