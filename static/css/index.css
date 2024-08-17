@@ -812,7 +812,7 @@ h2 {
 }
 .faq-item {
   margin: 10px 0;
-  border-bottom: 2px solid #F1E9DF;
+  border-bottom: 2px solid #f1e9df;
 }
 .faq-question {
   padding: 10px;
@@ -836,11 +836,50 @@ h2 {
   font-size: 20px;
 }
 /* FAQ end */
-section {
-  /* border: 1px solid green; */
-  width: 100%;
-  height: 100vh;
+/* needhelp start */
+#section8 {
+  background-color: #fbf8f5;
+  padding: 0px 140px 130px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+  /* border: 1px solid black; */
 }
+.needHelpTextContent {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+.needHelpTextContent h1,
+.needHelpTextContent h2,
+.needHelpTextContent p {
+  margin: 0;
+}
+.needHelpTextContent h2 {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.needhelpFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  /* border: 1px solid black; */
+  padding: 32px;
+}
+.needhelpFormContainer input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 16px 24px;
+  border-radius: 10px;
+}
+.needhelpFormContainer button {
+  margin-top: 6px;
+}
+/* needhelp end */
 
 /* media query ----------------------------------------------------------------------------------------- */
 /* nav bar for desktop small screens --------------------------------------------------------------- */
@@ -938,6 +977,12 @@ section {
     width: 55%;
   }
   /* floor plans end */
+  /* need help start */
+  #section8 {
+    padding: 0px 80px 130px;
+    gap: 10px;
+  }
+  /* need help end */
 }
 /* Desktops ---------------------------------------------------------------------------------------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
@@ -1068,6 +1113,12 @@ section {
     padding: 100px 40px;
   }
   /* FAQ end */
+  /* need help start */
+  #section8 {
+    padding: 0px 40px 100px;
+    gap: 0px;
+  }
+  /* need help end */
 }
 
 /* Tablets ---------------------------------------------------------------------------------------------- */
@@ -1232,6 +1283,13 @@ section {
     padding: 80px 40px;
   }
   /* FAQ end */
+  /* need help start */
+  #section8 {
+    padding: 0px 40px 80px;
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* need help end */
 }
 
 /* Mobile devices ------------------------------------------------------------------------------------------ */
@@ -1425,4 +1483,17 @@ section {
     padding: 80px 20px;
   }
   /* FAQ end */
+  /* need help start */
+  #section8 {
+    padding: 0px 20px 80px;
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .needhelpFormContainer{
+    padding: 0;
+  }
+  .needhelpFormContainer button{
+    margin: auto;
+  }
+  /* need help end */
 }

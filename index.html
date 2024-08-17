@@ -743,42 +743,30 @@
         </div>
       </div>
     </section>
+
+    <!-- need help -->
+    <section id="section8">
+      <div class="needHelpTextContent">
+        <h1>Need Help</h1>
+        <h2>Were Excited to Assist with This Project.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor
+          incididunt ut labore et
+        </p>
+      </div>
+      <form action="">
+        <div class="needhelpFormContainer">
+          <input type="text" placeholder="Name*" required />
+          <input type="email" placeholder="Email Id*" required />
+          <input type="tel" placeholder="Contact No*" required />
+          <button class="navBtn">Submit</button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
 <script src="static/js/navBar.js"></script>
 <script src="static/js/topSection.js"></script>
 <script src="static/js/location.js"></script>
 <script src="static/js/faq.js"></script>
-<script>
-  $(document).ready(function () {
-    $(".owl-one").owlCarousel({
-      items: 1,
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: false,
-      navText: ["&#129128;", "&#129130;"],
-    });
-  });
-  $(document).ready(function () {
-    $(".owl-two").owlCarousel({
-      items: 3,
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: false,
-      navText: ["&#129128;", "&#129130;"],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        769: {
-          items: 2,
-        },
-        1400: {
-          items: 3,
-        },
-      },
-    });
-  });
-</script>
+<script src="static/js/carousel.js"></script>
