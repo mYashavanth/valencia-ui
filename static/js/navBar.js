@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateNavBar() {
     if (!navbarToggle.classList.contains("show")) {
       navBarMobile.style.backgroundColor = "white";
-      hamburgerBtn.innerHTML = `<img src="./static/images/navbar/crossBtn.svg" alt="close" style="width: 40px; height: 40px;" />`;
+      hamburgerBtn.innerHTML = `<img src="./static/images/navBar/crossBtn.svg" alt="close" style="width: 40px; height: 40px;" />`;
     } else {
       navBarMobile.style.backgroundColor = "transparent";
-      hamburgerBtn.innerHTML = `<img src="./static/images/navbar/hamburger.svg" alt="hamburger" style="width: 40px; height: 40px;" />`;
+      hamburgerBtn.innerHTML = `<img src="./static/images/navBar/hamburger.svg" alt="hamburger" style="width: 40px; height: 40px;" />`;
     }
   }
 
@@ -52,18 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburgerBtn.addEventListener("click", function () {
     if (!navbarToggle.classList.contains("show")) {
       navBarMobile.style.backgroundColor = "white";
-      hamburgerBtn.innerHTML = `<img src="./static/images/navbar/crossBtn.svg" alt="close" style="width: 40px; height: 40px;" />`;
+      hamburgerBtn.innerHTML = `<img src="./static/images/navBar/crossBtn.svg" alt="close" style="width: 40px; height: 40px;" />`;
     } else {
       navBarMobile.style.backgroundColor = "transparent";
     }
   });
   navbarToggle.addEventListener("show.bs.collapse", function () {
     navBarMobile.style.backgroundColor = "white";
-    hamburgerBtn.innerHTML = `<img src="./static/images/navbar/crossBtn.svg" alt="close" style="width: 40px; height: 40px;" />`;
+    hamburgerBtn.innerHTML = `<img src="./static/images/navBar/crossBtn.svg" alt="close" style="width: 40px; height: 40px;" />`;
   });
 
   navbarToggle.addEventListener("hidden.bs.collapse", function () {
-    hamburgerBtn.innerHTML = `<img src="./static/images/navbar/hamburger.svg" alt="hamburger" style="width: 40px; height: 40px;" />`;
+    hamburgerBtn.innerHTML = `<img src="./static/images/navBar/hamburger.svg" alt="hamburger" style="width: 40px; height: 40px;" />`;
     if (window.scrollY === 0) {
       navBarMobile.style.backgroundColor = "transparent";
     }
