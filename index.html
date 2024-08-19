@@ -23,6 +23,18 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-98FK8BNECM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-98FK8BNECM");
+    </script>
     <!-- Owl Carousel CSS -->
     <link
       rel="stylesheet"
@@ -116,7 +128,13 @@
             <h2>Get in Touch!</h2>
             <input type="text" placeholder="Name*" required />
             <input type="email" placeholder="Email Id*" required />
-            <input type="tel" placeholder="Contact No*" required />
+            <input
+              type="tel"
+              placeholder="Contact No*"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              required
+            />
             <button class="navBtn">Submit</button>
           </div>
         </form>
@@ -758,7 +776,13 @@
         <div class="needhelpFormContainer">
           <input type="text" placeholder="Name*" required />
           <input type="email" placeholder="Email Id*" required />
-          <input type="tel" placeholder="Contact No*" required />
+          <input
+            type="tel"
+            placeholder="Contact No*"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+          />
           <button class="navBtn">Submit</button>
         </div>
       </form>
