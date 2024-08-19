@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function activateLink() {
     let index = sections.length;
 
-    while (--index && window.scrollY + 50 < sections[index].offsetTop - 90) {}
+    while (--index && window.scrollY + 50 < sections[index].offsetTop + 250) {}
 
     navLinks.forEach((link) => link.classList.remove("active"));
     navLinks[index].classList.add("active");
@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        const offset = window.innerWidth > 1024 ? 10 : window.innerWidth <= 480 ? 180 : 90;
+        const offset =
+          window.innerWidth > 1024 ? 10 : window.innerWidth <= 480 ? 180 : 90;
         window.scrollTo({
           top: targetElement.offsetTop - offset,
           behavior: "smooth",

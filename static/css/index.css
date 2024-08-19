@@ -14,7 +14,7 @@ h1 {
 }
 h2 {
   font-size: 44px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
   font-weight: 700;
 }
 /* nav bar start */
@@ -283,7 +283,7 @@ h2 {
   margin-bottom: 16px;
 }
 .aboutCard h3 {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -395,12 +395,12 @@ h2 {
 .pricingCard h4 {
   font-size: 24px;
   font-weight: 700;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
 }
 .pricingCard h4 span {
   font-size: 42px;
   font-weight: 900;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
 }
 .pricingCardTop {
   /* border: 1px solid black; */
@@ -553,7 +553,7 @@ h2 {
 .benefitsCard h4 {
   font-size: 22px;
   font-weight: 900;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
 }
 .benefitsCardTop {
   /* border: 1px solid black; */
@@ -624,7 +624,7 @@ h2 {
 .locationData h3 {
   font-size: 18px;
   font-weight: 600;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
   margin: 0;
 }
 .locationData p {
@@ -670,7 +670,7 @@ h2 {
 .locationBottom-questionContent h3 {
   font-size: 18px;
   font-weight: 700;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
   margin: 0;
 }
 .toggle-icon {
@@ -741,7 +741,7 @@ h2 {
 .owl-two.owl-carousel .item h3 {
   font-size: 22px;
   font-weight: 700;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
   margin: 0;
 }
 .floorImg {
@@ -827,7 +827,7 @@ h2 {
 .faq-question h3 {
   font-size: 22px;
   font-weight: 700;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
   margin: 0;
 }
 .faq-answer {
@@ -908,7 +908,7 @@ footer {
   margin-bottom: 14px;
   font-size: 34px;
   font-weight: 700;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
 }
 .footerTop button:hover {
   border: 2px solid var(--primary-color);
@@ -958,7 +958,7 @@ footer {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi";
 }
 .footerMedia {
   /* border: 1px solid white; */
