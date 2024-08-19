@@ -5,7 +5,10 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     dots: false,
-    navText: ["<span>&#129128;</span>", "<span>&#129130;</span>"],
+    navText: [
+      "<i class='fa fa-arrow-left'></i>",
+      "<i class='fa fa-arrow-right'></i>",
+    ],
   });
 });
 $(document).ready(function () {
@@ -15,7 +18,10 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     dots: false,
-    navText: ["<span>&#129128;</span>", "<span>&#129130;</span>"],
+    navText: [
+      "<i class='fa fa-arrow-left'></i>",
+      "<i class='fa fa-arrow-right'></i>",
+    ],
     responsive: {
       0: {
         items: 1,
