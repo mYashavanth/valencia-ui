@@ -159,11 +159,12 @@ h2 {
 #tsGetinTouchToggleClassBtn {
   position: absolute;
   top: 50px;
-  right: -48px;
   rotate: -90deg;
+  right: -28px;
 }
 #tsGetinTouchToggleClassBtn.active {
-  right: -28px;
+  right: -48px;
+
 }
 
 .tsForm {

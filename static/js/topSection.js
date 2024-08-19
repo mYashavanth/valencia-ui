@@ -1,21 +1,21 @@
 getinTouch = document.getElementById("tsGetinTouchToggleClassBtn");
 FormDataContiner = document.querySelector(".tsFormContainer");
 
-function checkScreenWidth() {
-  if (window.innerWidth > 1024) {
-    FormDataContiner.classList.add("active");
-    getinTouch.classList.add("active");
-    getinTouch.innerHTML = "Close";
-  } else {
-    FormDataContiner.classList.remove("active");
-    getinTouch.classList.remove("active");
-    getinTouch.innerHTML = "Get in Touch";
-  }
-}
+// function checkScreenWidth() {
+//   if (window.innerWidth > 1024) {
+//     FormDataContiner.classList.add("active");
+//     getinTouch.classList.add("active");
+//     getinTouch.innerHTML = "Close";
+//   } else {
+//     FormDataContiner.classList.remove("active");
+//     getinTouch.classList.remove("active");
+//     getinTouch.innerHTML = "Get in Touch";
+//   }
+// }
 
-checkScreenWidth();
+// checkScreenWidth();
 
-window.addEventListener("resize", checkScreenWidth);
+// window.addEventListener("resize", checkScreenWidth);
 
 getinTouch.addEventListener("click", () => {
   FormDataContiner.classList.toggle("active");
