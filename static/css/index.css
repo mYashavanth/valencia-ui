@@ -140,7 +140,7 @@ h2 {
   width: 500px;
   height: calc(100vh - 90px);
   background-color: #5c727d7a;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(2px);
   padding: 80px;
   display: flex;
   flex-direction: column;
