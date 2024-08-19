@@ -5,7 +5,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     dots: false,
-    navText: ["&#129128;", "&#129130;"],
+    navText: ["<span>&#129128;</span>", "<span>&#129130;</span>"],
   });
 });
 $(document).ready(function () {
@@ -15,7 +15,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     dots: false,
-    navText: ["&#129128;", "&#129130;"],
+    navText: ["<span>&#129128;</span>", "<span>&#129130;</span>"],
     responsive: {
       0: {
         items: 1,
