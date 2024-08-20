@@ -46,14 +46,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="static/css/index.css" />
     <!-- font awesome icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/floatinBar.css" />
   </head>
   <body>
+    <!-- Floating bar -->
+    <div class="floatingBar">
+      <button id="floatingBarClose">&#10540;</button>
+      <div>
+        <img src="static/images/floatingBar/enquire.svg" alt="enquire" />
+        <p>Enquire</p>
+      </div>
+      <div onclick="window.open('https://wa.me/917899219267', '_blank')">
+        <img src="static/images/floatingBar/whatsapp.svg" alt="whatsapp" />
+        <p>Whatsapp</p>
+      </div>
+      <div onclick="window.open('tel:+917899219267')">
+        <img src="static/images/floatingBar/call.svg" alt="call" />
+        <p>Call</p>
+      </div>
+    </div>
+    <button id="floatingBarOpen">Enquire</button>
     <!-- nav bar large screens -->
     <div class="navBar">
       <div class="navLogo">
@@ -817,57 +835,57 @@
         </p>
       </div>
       <form
-          action="https://forms.zohopublic.in/credvest/form/Valencia/formperma/mll4ULxIOnP2ZbtshLbe0RJU9FfywHi9jRoyLSRmT3s/htmlRecords/submit"
-          name="form"
-          id="form"
-          method="POST"
-          accept-charset="UTF-8"
-          enctype="multipart/form-data"
-        >
-          <input
-            type="hidden"
-            name="zf_referrer_name"
-            value=""
-          /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-          <input
-            type="hidden"
-            name="zf_redirect_url"
-            value=""
-          /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
-          <input type="hidden" name="zc_gad" value="" />
+        action="https://forms.zohopublic.in/credvest/form/Valencia/formperma/mll4ULxIOnP2ZbtshLbe0RJU9FfywHi9jRoyLSRmT3s/htmlRecords/submit"
+        name="form"
+        id="form"
+        method="POST"
+        accept-charset="UTF-8"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="hidden"
+          name="zf_referrer_name"
+          value=""
+        /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+        <input
+          type="hidden"
+          name="zf_redirect_url"
+          value=""
+        /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+        <input type="hidden" name="zc_gad" value="" />
         <div class="needhelpFormContainer">
           <input
-              type="text"
-              name="SingleLine"
-              value=""
-              fieldType="1"
-              maxlength="255"
-              placeholder="Name*"
-              required
-            />
-            <input
-              type="email"
-              maxlength="255"
-              name="Email"
-              value=""
-              fieldType="9"
-              placeholder="Email Id*"
-              required
-            />
-            <input
-              type="tel"
-              compname="PhoneNumber"
-              name="PhoneNumber_countrycode"
-              phoneFormat="1"
-              isCountryCodeEnabled="false"
-              maxlength="10"
-              value=""
-              fieldType="11"
-              id="international_PhoneNumber_countrycode"
-              placeholder="Contact No*"
-              pattern="[0-9]{10}"
-              required
-            />
+            type="text"
+            name="SingleLine"
+            value=""
+            fieldType="1"
+            maxlength="255"
+            placeholder="Name*"
+            required
+          />
+          <input
+            type="email"
+            maxlength="255"
+            name="Email"
+            value=""
+            fieldType="9"
+            placeholder="Email Id*"
+            required
+          />
+          <input
+            type="tel"
+            compname="PhoneNumber"
+            name="PhoneNumber_countrycode"
+            phoneFormat="1"
+            isCountryCodeEnabled="false"
+            maxlength="10"
+            value=""
+            fieldType="11"
+            id="international_PhoneNumber_countrycode"
+            placeholder="Contact No*"
+            pattern="[0-9]{10}"
+            required
+          />
           <button class="navBtn">Submit</button>
         </div>
       </form>
@@ -928,3 +946,4 @@
 <script src="static/js/location.js"></script>
 <script src="static/js/faq.js"></script>
 <script src="static/js/carousel.js"></script>
+<script src="static/js/floatingBar.js"></script>

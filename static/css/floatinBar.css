@@ -1,0 +1,93 @@
+.floatingBar {
+  display: flex;
+  background-color: #1e1e1e;
+  color: white;
+  width: fit-content;
+  padding: 24px 32px;
+  gap: 40px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 32px;
+  right: 50%;
+  transform: translateX(50%);
+  /* right: -100%; */
+  z-index: 9999;
+  /* overflow: hidden; */
+  transition: all 1s ease;
+}
+
+.floatingBar div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.floatingBar div img {
+  margin-bottom: 4px;
+}
+.floatingBar div p {
+  margin: 0;
+}
+#floatingBarClose {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: fit-content;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #1e1e1e;
+  border: 1px solid wheat;
+  color: wheat;
+  cursor: pointer;
+  display: none;
+  opacity: 1;
+}
+#floatingBarOpen {
+  position: fixed;
+  bottom: 40px;
+  right: -28px;
+  rotate: -90deg;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: all 1s ease;
+  display: none;
+}
+/* media query ----------------------------------------------------------------------------------------- */
+/* nav bar for desktop small screens --------------------------------------------------------------- */
+@media all and (min-width: 1025px) and (max-width: 1400px) {
+}
+/* Desktops ---------------------------------------------------------------------------------------------- */
+@media all and (min-width: 769px) and (max-width: 1024px) {
+}
+/* Tablets ---------------------------------------------------------------------------------------------- */
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #floatingBarClose {
+    display: block;
+  }
+}
+/* Mobile devices ------------------------------------------------------------------------------------------ */
+@media all and (max-width: 480px) {
+  #floatingBarClose {
+    display: block;
+  }
+  .floatingBar {
+    padding: 8px 16px;
+    gap: 12px;
+  }
+  .floatingBar div {
+    gap: 4px;
+  }
+  .floatingBar div img {
+    margin-bottom: 0px;
+  }
+  #floatingBarOpen {
+    font-size: 12px;
+  }
+}
