@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valencia</title>
+    <link rel="stylesheet" href="/static/css/index.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .thankyouContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 30px;
+    }
+    .thankyouContainer img {
+      width: 300px;
+    }
+    .thankyouContainer div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .thankyouContainer h2 {
+      margin: 0;
+      font-size: 32px;
+      color: var(--primary-color);
+    }
+    .thankyouContainer p {
+      margin: 0;
+      font-size: 18px;
+    }
+  </style>
+  <body>
+    <div class="thankyouContainer">
+      <img src="/static/images/navBar/logo.webp" alt="logo" />
+      <div>
+        <h2>Thank You for Your Interest!</h2>
+        <p>
+          We have received your information and will get back to you shortly.
+        </p>
+        <button class="navBtn">Return to Home Page</button>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".navBtn").addEventListener("click", () => {
+        window.location.href = "/";
+      });
+    </script>
+  </body>
+</html>
