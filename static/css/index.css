@@ -718,7 +718,7 @@ h2 {
 /* location end */
 /* floor plans start */
 #section6 {
-  padding: 130px 140px 0;
+  padding: 0px 140px 130px;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -973,6 +973,8 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 .footerBottom {
   /* border: 1px solid black; */
@@ -1079,7 +1081,7 @@ footer {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 130px 140px 0;
+    padding: 0 140px 130px;
   }
   #section6 h2 {
     width: 55%;
@@ -1220,7 +1222,7 @@ footer {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 100px 40px 0;
+    padding: 0 40px 100px;
   }
   #section6 h2 {
     width: 70%;
@@ -1392,7 +1394,7 @@ footer {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 80px 40px 0;
+    padding: 0 40px 80px;
   }
   #section6 h2 {
     width: 100%;
@@ -1435,10 +1437,14 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
+  .footerLogoContent {
+    width: fit-content;
+    margin: auto;
+  }
   .footerMedia {
     display: flex;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .footerBottom {
     padding: 16px 40px;
@@ -1604,9 +1610,6 @@ footer {
   .locationData img {
     width: 100%;
   }
-  .locationBottom {
-    border: 1px solid black;
-  }
   .locationBottom-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1672,7 +1675,7 @@ footer {
   .footerMedia {
     display: flex;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .footerBottom {
     padding: 16px 20px;
