@@ -1731,5 +1731,9 @@ footer {
     flex-direction: column;
     gap: 16px;
   }
+  .footerBottom div {
+  flex-wrap: wrap;
+  justify-content: center;
+}
   /* footer end */
 }
