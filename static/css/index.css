@@ -341,7 +341,21 @@ h2 {
   gap: 16px;
   width: 45%;
 }
-.specialCard p {
+.specialCard div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* border: 1px solid black; */
+  height: 100%;
+}
+.specialCard div h3 {
+  font-family: "Satoshi";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+}
+.specialCard div p {
   margin: 0;
 }
 
@@ -596,13 +610,12 @@ h2 {
 .locationMapContainer {
   /* border: 1px solid black; */
   display: flex;
-  gap: 90px;
 }
 .locationMap {
   border: 20px solid white;
   border-radius: 10px;
-  width: 780px;
-  height: 550px;
+  width: 95%;
+  height: 85vh;
 }
 .locationMap iframe {
   width: 100%;
@@ -1057,12 +1070,8 @@ footer {
   .locationTextContentP {
     width: 55%;
   }
-  .locationMapContainer {
-    gap: 40px;
-  }
   .locationMap {
-    width: 780px;
-    height: auto;
+    width: 100%;
   }
   .locationBottom-item {
     width: 90%;
@@ -1200,7 +1209,6 @@ footer {
   .locationMapContainer {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
   .locationMap {
     width: 100%;
@@ -1363,7 +1371,6 @@ footer {
   .locationMapContainer {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
   .locationMap {
     width: 100%;
@@ -1583,7 +1590,6 @@ footer {
   .locationMapContainer {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
   .locationMap {
     width: 100%;
@@ -1597,6 +1603,9 @@ footer {
   }
   .locationData img {
     width: 100%;
+  }
+  .locationBottom {
+    border: 1px solid black;
   }
   .locationBottom-container {
     grid-template-columns: repeat(1, 1fr);
