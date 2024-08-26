@@ -994,6 +994,53 @@ footer {
   gap: 20px;
 }
 /* footer end */
+/* popup form modal start */
+.modal-header{
+  background-color: var(--primary-color);
+  color: white;
+}
+.modal-header button{
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 1;
+}
+.modal-header button:hover{
+  background-color: white;
+  color: var(--primary-color);
+}
+.popupForm{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.modal-body{
+  background-color: #d386b446;
+}
+.popupForm input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 16px 24px;
+  border-radius: 10px;
+}
+.popupForm button{
+  margin-top: 6px;
+}
+.popupForm h3{
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Satoshi";
+}
+/* popup form modal end */
 
 /* media query ----------------------------------------------------------------------------------------- */
 /* nav bar for desktop small screens --------------------------------------------------------------- */
