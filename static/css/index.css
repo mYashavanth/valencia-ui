@@ -1000,7 +1000,6 @@ footer {
   color: white;
 }
 .modal-header button {
-  border: 1px solid white;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -1009,16 +1008,18 @@ footer {
   align-items: center;
   color: white;
   opacity: 1;
+  font-size: 20px;
 }
 .modal-header button:hover {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: none;
+  color: white;
+  scale: 1.1;
 }
 .popupForm {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-start;
+  align-items: center;
 }
 .modal-body {
   background-color: #fbf8f5;
@@ -1033,11 +1034,13 @@ footer {
 }
 .popupForm button {
   margin-top: 6px;
+  width: 50%;
 }
 .popupForm h3 {
   font-size: 32px;
   font-weight: 700;
   font-family: "Satoshi";
+  width: 100%;
 }
 /* popup form modal end */
 
