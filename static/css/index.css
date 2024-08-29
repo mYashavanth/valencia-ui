@@ -384,10 +384,19 @@ h2 {
   grid-area: specialImg;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .specialImgContainer img {
   width: 100%;
   height: 100%;
+}
+.specialImgContainer iframe {
+  width: 80%;
+  aspect-ratio: 16 / 9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* special end */
 /* pricing start */
@@ -609,6 +618,30 @@ h2 {
   transition: all 0.3s ease;
 }
 /* benefits end */
+/* masterPlan start */
+#masterPlan {
+  padding: 130px 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 100% !important;
+  /* border: 1px solid black; */
+  background-color: #fbf8f5;
+}
+#masterPlan h2 {
+  width: 40%;
+}
+.masterPlanImg {
+  width: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid white
+}
+.masterPlanImg img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* masterPlan end */
 /* location start */
 #section5 {
   padding: 130px 140px;
@@ -734,7 +767,7 @@ h2 {
 /* location end */
 /* floor plans start */
 #section6 {
-  padding: 0px 140px 130px;
+  padding: 130px 140px;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -1129,6 +1162,11 @@ footer {
     width: 30%;
   }
   /* benefits end */
+  /* masterPlan start */
+  #masterPlan h2 {
+    width: 55%;
+  }
+  /* masterPlan end */
   /* location start */
   #section5 {
     padding: 130px 100px;
@@ -1146,7 +1184,7 @@ footer {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 0 140px 130px;
+    padding: 130px 140px;
   }
   #section6 h2 {
     width: 55%;
@@ -1262,6 +1300,17 @@ footer {
     width: 45%;
   }
   /* benefits end */
+  /* masterPlan start */
+  #masterPlan {
+    padding: 100px 40px;
+  }
+  #masterPlan h2 {
+    width: 55%;
+  }
+  .masterPlanImg {
+    width: 90%;
+  }
+  /* masterPlan end */
   /* location start */
   #section5 {
     padding: 100px 40px;
@@ -1287,7 +1336,7 @@ footer {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 0 40px 100px;
+    padding: 100px 40px;
   }
   #section6 h2 {
     width: 70%;
@@ -1424,6 +1473,17 @@ footer {
     width: 70%;
   }
   /* benefits end */
+  /* masterPlan start */
+  #masterPlan {
+    padding: 80px 40px;
+  }
+  #masterPlan h2 {
+    width: 55%;
+  }
+  .masterPlanImg {
+    width: 100%;
+  }
+  /* masterPlan end */
   /* location start */
   #section5 {
     padding: 80px 40px;
@@ -1459,7 +1519,7 @@ footer {
   /* location end */
   /* floor plans start */
   #section6 {
-    padding: 0 40px 80px;
+    padding: 80px 40px;
   }
   #section6 h2 {
     width: 100%;
@@ -1647,6 +1707,17 @@ footer {
     width: 90%;
   }
   /* benefits end */
+  /* masterPlan start */
+  #masterPlan {
+    padding: 80px 20px;
+  }
+  #masterPlan h2 {
+    width: 55%;
+  }
+  .masterPlanImg {
+    width: 100%;
+  }
+  /* masterPlan end */
   /* location start */
   #section5 {
     padding: 80px 20px;
