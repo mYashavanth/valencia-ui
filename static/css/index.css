@@ -808,6 +808,7 @@ h2 {
 }
 .floorImg {
   width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 10px;
   filter: blur(6px);
