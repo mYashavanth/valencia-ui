@@ -412,8 +412,8 @@ h2 {
   /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 40px;
+  justify-content: center;
+  gap: 120px;
 }
 .pricingCard {
   /* border: 1px solid black; */
@@ -595,10 +595,20 @@ h2 {
   font-family: "Satoshi";
 }
 .benefitsCardTop {
+  width: 100px;
+  height: 100px;
   /* border: 1px solid black; */
-  width: fit-content;
   margin-left: auto;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f1eadf;
+}
+.benefitsCardTop img {
+  width: 45px;
+  height: 45px;
 }
 .benefitsCardBottomStyle {
   background-color: var(--primary-color);
@@ -635,7 +645,7 @@ h2 {
   width: 60%;
   object-fit: cover;
   border-radius: 10px;
-  border: 5px solid white
+  border: 5px solid white;
 }
 .masterPlanImg img {
   width: 100%;
@@ -1135,6 +1145,9 @@ footer {
   }
   /* special end */
   /* pricing start */
+  .pricingCardContainer {
+    gap: 40px;
+  }
   .pricingCard {
     width: 45%;
   }
@@ -1272,6 +1285,9 @@ footer {
   /* pricing start */
   #section2 {
     padding: 100px 40px;
+  }
+  .pricingCardContainer {
+    gap: 40px;
   }
   .pricingCard {
     width: 45%;
@@ -1428,6 +1444,9 @@ footer {
   /* pricing start */
   #section2 {
     padding: 80px 40px;
+  }
+  .pricingCardContainer {
+    gap: 40px;
   }
   .pricingCard {
     width: 75%;
@@ -1659,6 +1678,9 @@ footer {
   /* pricing start */
   #section2 {
     padding: 80px 20px;
+    gap: 40px;
+  }
+  .pricingCardContainer {
     gap: 40px;
   }
   .pricingCard {
