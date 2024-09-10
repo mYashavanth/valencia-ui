@@ -70,3 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function closeDropdown() {
+  var dropdown = document.getElementById("navbarToggleExternalContent");
+  var bootstrapCollapse = new bootstrap.Collapse(dropdown, { toggle: false });
+  if (dropdown.classList.contains("show")) {
+    bootstrapCollapse.hide();
+  }
+}
