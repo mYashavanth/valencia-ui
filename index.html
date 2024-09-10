@@ -78,7 +78,9 @@
               class="btn"
               data-bs-dismiss="modal"
               aria-label="Close"
-            >&#10540;</button>
+            >
+              &#10540;
+            </button>
           </div>
           <div class="modal-body">
             <form
@@ -94,6 +96,84 @@
               <input type="hidden" name="zc_gad" value="" />
               <div class="popupForm">
                 <h3>Enquire Now</h3>
+                <input
+                  type="text"
+                  name="SingleLine"
+                  fieldType="1"
+                  maxlength="255"
+                  placeholder="Name*"
+                  required
+                />
+                <input
+                  type="email"
+                  maxlength="255"
+                  name="Email"
+                  fieldType="9"
+                  placeholder="Email Id*"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="PhoneNumber_countrycode"
+                  maxlength="10"
+                  fieldType="11"
+                  placeholder="Contact No*"
+                  pattern="[0-9]{10}"
+                  required
+                />
+                <input
+                  type="date"
+                  name="SingleLine1"
+                  value=""
+                  fieldtype="1"
+                  maxlength="255"
+                  placeholder="Site visit date (DD/MM/YYYY)"
+                  required
+                />
+                <button class="navBtn" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- floorPlan modal -->
+    <div
+      class="modal fade"
+      id="floorPlanModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="static/images/footer/logo1.svg" alt="logo" />
+
+            <button
+              type="button"
+              class="btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              &#10540;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://forms.zohopublic.in/credvest/form/Valenciafloorplan/formperma/dAgvaHxN_5BtKG7uNYyrRUATIygW_eixmgGexgZ0H9I/htmlRecords/submit"
+              name="form"
+              id="form"
+              method="POST"
+              accept-charset="UTF-8"
+              enctype="multipart/form-data"
+            >
+              <input type="hidden" name="zf_referrer_name" value="" />
+              <input type="hidden" name="zf_redirect_url" value="" />
+              <input type="hidden" name="zc_gad" value="" />
+              <div class="popupForm">
+                <h3>Floor Plan Enquiry</h3>
                 <input
                   type="text"
                   name="SingleLine"
@@ -670,7 +750,13 @@
             alt="floor1"
           />
           <h3>Floor Plan 1</h3>
-          <button class="unlockBtn navBtn">Unlock</button>
+          <button
+            class="unlockBtn navBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#floorPlanModal"
+          >
+            Unlock
+          </button>
         </div>
         <div class="item">
           <img
@@ -679,7 +765,13 @@
             alt="floor2"
           />
           <h3>Floor Plan 2</h3>
-          <button class="unlockBtn navBtn">Unlock</button>
+          <button
+            class="unlockBtn navBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#floorPlanModal"
+          >
+            Unlock
+          </button>
         </div>
         <div class="item">
           <img
@@ -688,7 +780,13 @@
             alt="floor3"
           />
           <h3>Floor Plan 3</h3>
-          <button class="unlockBtn navBtn">Unlock</button>
+          <button
+            class="unlockBtn navBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#floorPlanModal"
+          >
+            Unlock
+          </button>
         </div>
         <div class="item">
           <img
@@ -697,7 +795,13 @@
             alt="floor4"
           />
           <h3>Floor Plan 4</h3>
-          <button class="unlockBtn navBtn">Unlock</button>
+          <button
+            class="unlockBtn navBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#floorPlanModal"
+          >
+            Unlock
+          </button>
         </div>
         <div class="item">
           <img
@@ -706,7 +810,13 @@
             alt="floor5"
           />
           <h3>Floor Plan 5</h3>
-          <button class="unlockBtn navBtn">Unlock</button>
+          <button
+            class="unlockBtn navBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#floorPlanModal"
+          >
+            Unlock
+          </button>
         </div>
       </div>
     </section>
