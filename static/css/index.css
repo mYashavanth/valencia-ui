@@ -632,10 +632,12 @@ h2 {
 /* benefits end */
 /* masterPlan start */
 #masterPlan {
+  padding: 130px 140px;
   display: flex;
   flex-direction: column;
   gap: 64px;
   height: 100% !important;
+  background-color: #fbf8f5;
   /* border: 1px solid black; */
 }
 #masterPlan h2 {
@@ -1113,6 +1115,13 @@ footer {
 @media all and (min-width: 1025px) and (max-width: 1400px) {
   .navBar {
     padding: 0px 40px;
+    /* border: 1px solid black; */
+  }
+  .navLinksAndBtnContainer {
+    gap: 10px;
+  }
+  .navLinks {
+    padding: 0 10px;
   }
   /* section1 start */
   #section1 {
@@ -1181,8 +1190,15 @@ footer {
   }
   /* benefits end */
   /* masterPlan start */
+  #masterPlan {
+    padding: 130px 100px;
+    gap: 40px;
+  }
   #masterPlan h2 {
     width: 55%;
+  }
+  .masterPlanImg {
+    width: 70%;
   }
   /* masterPlan end */
   /* location start */
@@ -1322,7 +1338,10 @@ footer {
   }
   /* benefits end */
   /* masterPlan start */
-
+  #masterPlan {
+    padding: 100px 40px;
+    gap: 40px;
+  }
   #masterPlan h2 {
     width: 70%;
   }
@@ -1496,7 +1515,10 @@ footer {
   }
   /* benefits end */
   /* masterPlan start */
-
+  #masterPlan {
+    padding: 80px 40px;
+    gap: 40px;
+  }
   #masterPlan h2 {
     width: 100%;
   }
@@ -1731,7 +1753,10 @@ footer {
   }
   /* benefits end */
   /* masterPlan start */
-
+  #masterPlan {
+    padding: 80px 20px;
+    gap: 20px;
+  }
   #masterPlan h2 {
     width: 100%;
   }

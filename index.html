@@ -122,13 +122,14 @@
                   required
                 />
                 <input
-                  type="date"
+                  type="text"
                   name="SingleLine1"
-                  value=""
-                  fieldtype="1"
+                  id="dateInput"
+                  placeholder="Book Site Visit"
                   maxlength="255"
-                  placeholder="Site visit date (DD/MM/YYYY)"
                   required
+                  onfocus="(this.type='date')"
+                  onblur="if(!this.value)this.type='text'"
                 />
                 <button class="navBtn" type="submit">Submit</button>
               </div>
@@ -200,13 +201,14 @@
                   required
                 />
                 <input
-                  type="date"
+                  type="text"
                   name="SingleLine1"
-                  value=""
-                  fieldtype="1"
+                  id="dateInput"
+                  placeholder="Book Site Visit"
                   maxlength="255"
-                  placeholder="Site visit date (DD/MM/YYYY)"
                   required
+                  onfocus="(this.type='date')"
+                  onblur="if(!this.value)this.type='text'"
                 />
                 <button class="navBtn" type="submit">Submit</button>
               </div>
@@ -244,13 +246,14 @@
       </div>
       <div class="navLinksAndBtnContainer">
         <div class="navLinkscontainer">
-          <a href="#section1" class="navLinks">About</a>
-          <a href="#section2" class="navLinks">Pricing</a>
-          <a href="#section3" class="navLinks">Gallery</a>
-          <a href="#section4" class="navLinks">Amenities</a>
-          <a href="#section6" class="navLinks">Floor Plans</a>
-          <a href="#section5" class="navLinks">Location</a>
-          <a href="#section7" class="navLinks">FAQ</a>
+          <a href="#section1" class="navLinks largeNav">About</a>
+          <a href="#section2" class="navLinks largeNav">Pricing</a>
+          <a href="#section3" class="navLinks largeNav">Gallery</a>
+          <a href="#section4" class="navLinks largeNav">Amenities</a>
+          <a href="#masterPlan" class="navLinks largeNav">Master Plan</a>
+          <a href="#section6" class="navLinks largeNav">Floor Plans</a>
+          <a href="#section5" class="navLinks largeNav">Location</a>
+          <a href="#section7" class="navLinks largeNav">FAQ</a>
         </div>
         <button
           class="navBtn"
@@ -295,13 +298,14 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-light p-4">
           <div class="navigationMobile">
-            <a href="#section1" class="navLinks">About</a>
-            <a href="#section2" class="navLinks">Pricing</a>
-            <a href="#section3" class="navLinks">Gallery</a>
-            <a href="#section4" class="navLinks">Amenities</a>
-            <a href="#section6" class="navLinks">Floor Plans</a>
-            <a href="#section5" class="navLinks">Location</a>
-            <a href="#section7" class="navLinks">FAQ</a>
+            <a href="#section1" class="navLinks smallNav">About</a>
+            <a href="#section2" class="navLinks smallNav">Pricing</a>
+            <a href="#section3" class="navLinks smallNav">Gallery</a>
+            <a href="#section4" class="navLinks smallNav">Amenities</a>
+            <a href="#masterPlan" class="navLinks smallNav">Master Plan</a>
+            <a href="#section6" class="navLinks smallNav">Floor Plans</a>
+            <a href="#section5" class="navLinks smallNav">Location</a>
+            <a href="#section7" class="navLinks smallNav">FAQ</a>
             <button
               class="navBtn"
               data-bs-toggle="modal"
@@ -372,13 +376,14 @@
               required
             />
             <input
-              type="date"
+              type="text"
               name="SingleLine1"
-              value=""
-              fieldtype="1"
+              id="dateInput"
+              placeholder="Book Site Visit"
               maxlength="255"
-              placeholder="Site visit date (DD/MM/YYYY)"
               required
+              onfocus="(this.type='date')"
+              onblur="if(!this.value)this.type='text'"
             />
             <button class="navBtn">Submit</button>
           </div>
@@ -723,21 +728,17 @@
         </div>
       </div>
     </section>
-
+    <!-- masterPlan -->
+    <section id="masterPlan">
+      <div class="masterPlanTextContent">
+        <h2>Master Plan</h2>
+      </div>
+      <div class="masterPlanImg">
+        <img src="static/images/floorPlans/masterplan.webp" alt="masterPlan" />
+      </div>
+    </section>
     <!-- floor plans -->
     <section id="section6">
-      <!-- masterPlan -->
-      <div id="masterPlan">
-        <div class="masterPlanTextContent">
-          <h2>Master Plan</h2>
-        </div>
-        <div class="masterPlanImg">
-          <img
-            src="static/images/floorPlans/masterplan.webp"
-            alt="masterPlan"
-          />
-        </div>
-      </div>
       <div class="floorplansTextContent">
         <h1>Floor Plans</h1>
         <h2>Find your perfect layout designed to fit your lifestyle.</h2>
@@ -1100,13 +1101,14 @@
             required
           />
           <input
-            type="date"
+            type="text"
             name="SingleLine1"
-            value=""
-            fieldtype="1"
+            id="dateInput"
+            placeholder="Book Site Visit"
             maxlength="255"
-            placeholder="Site visit date (DD/MM/YYYY)"
             required
+            onfocus="(this.type='date')"
+            onblur="if(!this.value)this.type='text'"
           />
           <button class="navBtn">Submit</button>
         </div>
